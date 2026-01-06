@@ -143,6 +143,24 @@ function ExperienceRoute() {
   return <Chat />;
 }
 
+function ClosedMessage() {
+  return (
+    <div className="flex items-center justify-center h-screen w-full bg-background">
+      <div className="text-center space-y-2">
+        <h1 className="text-4xl font-bold tracking-tight text-foreground">
+          Signalix is currently not operational
+        </h1>
+        <p className="text-xl text-muted-foreground">
+          on paused
+        </p>
+        <p className="text-sm text-muted-foreground/60 mt-8">
+          closed by prince
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function Router() {
   return (
     <Switch>
@@ -160,7 +178,7 @@ function App() {
       <ThemeProvider>
         <TooltipProvider>
           <div className="flex h-screen w-full">
-            <Router />
+            <ClosedMessage />
           </div>
           <Toaster />
         </TooltipProvider>
