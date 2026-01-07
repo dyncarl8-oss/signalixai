@@ -566,7 +566,7 @@
   div.flex.items-center.justify-center.h-screen.w-full.bg-background
     > div.text-center.space-y-2
     > p.text-sm.text-muted-foreground\/60.mt-8::after {
-    content: "Closed by Prince";
+    content: "Paused by dev";
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: hsl(var(--muted-foreground) / 0.7);
